@@ -1,0 +1,39 @@
+﻿feature,importance
+num__tasa_afirmativos_previos,0.3079773789425001
+num__tasa_ausencias_previas,0.20738811426207474
+num__tasa_negativos_previos,0.1280000391576686
+num__anio,0.10726157980383709
+num__total_votos_previos,0.06489319599692334
+num__tasa_abstenciones_previas,0.04776363443747848
+cat__macrocoalicion_PERONISMO,0.038343307850122604
+num__mes,0.03483026361550484
+cat__macrocoalicion_RADICALISMO,0.014953611583101212
+cat__macrocoalicion_PROVINCIALES,0.004532446526160784
+cat__macrocoalicion_IZQUIERDA,0.00387815017146092
+cat__macrocoalicion_PRO,0.003709168278417338
+cat__provincia_C.A.B.A.,0.003384699540607397
+cat__provincia_Santiago del Estero,0.003150771032937214
+cat__provincia_Buenos Aires,0.0028186950788665877
+cat__macrocoalicion_OTROS,0.0028176926025036053
+cat__provincia_Neuquén,0.002348807468558773
+cat__provincia_Córdoba,0.0020448588239145547
+cat__provincia_San Luis,0.002017319850612958
+cat__provincia_Catamarca,0.0014804631213772975
+cat__provincia_Santa Fe,0.0014314195930240129
+cat__provincia_La Rioja,0.001248461739241963
+cat__provincia_Tucumán,0.001181241212044376
+cat__provincia_Mendoza,0.0011257203235170276
+cat__provincia_Jujuy,0.0011133363181619308
+cat__provincia_Salta,0.0010282798751249035
+cat__provincia_Corrientes,0.0009427505424669509
+cat__provincia_Chubut,0.0009417425752091307
+cat__provincia_Tierra del Fuego,0.0009324772863486812
+cat__provincia_San Juan,0.0008767188459716327
+cat__provincia_La Pampa,0.0008661715026557083
+cat__provincia_Misiones,0.0008585879416209057
+cat__provincia_Entre Ríos,0.0008519890669379426
+cat__provincia_Rio Negro,0.0008133728090383667
+cat__provincia_Chaco,0.0007703190516221018
+cat__provincia_Santa Cruz,0.0006421256342797336
+cat__provincia_Formosa,0.0005515903097354465
+cat__macrocoalicion_LLA,0.0002294972283707514

@@ -1,0 +1,66 @@
+# =========================
+
+# PYTHON
+
+# =========================
+
+**pycache**/
+*.pyc
+*.pyo
+*.pyd
+
+# =========================
+
+# ENTORNOS VIRTUALES
+
+# =========================
+
+venv/
+.venv/
+env/
+
+# =========================
+
+# VS CODE
+
+# =========================
+
+.vscode/
+
+# =========================
+
+# JUPYTER
+
+# =========================
+
+.ipynb_checkpoints/
+
+# =========================
+
+# DATASETS INTERMEDIOS
+
+# =========================
+
+raw_data/votos_expandidos.csv
+raw_data/votos_limpios.csv
+raw_data/votos_macrocoaliciones.csv
+raw_data/dataset_features_base.csv
+
+# =========================
+
+# ARCHIVOS TEMPORALES
+
+# =========================
+
+*.log
+*.tmp
+
+# =========================
+
+# SISTEMA OPERATIVO
+
+# =========================
+
+.DS_Store
+Thumbs.db
+desktop.ini
