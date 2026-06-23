@@ -10,34 +10,49 @@ Aplicación web que permite visualizar y predecir el comportamiento de voto de l
 
 - **Login seguro** con usuario y contraseña encriptada
 - **Dashboard interactivo** con gráficos de votaciones por bloque y provincia
-- **Predicción de voto** usando un modelo Random Forest entrenado con datos reales de la Cámara de Diputados
+- **Predicción de voto** usando un modelo Random Forest
 - **API REST** construida con FastAPI
 
 ---
 
 ## 🗂️ Estructura del proyecto
-
-```
 DiputadosAR/
+
 ├── BACKEND/
+
 │   ├── main.py              → punto de entrada de la API
-│   ├── database.py          → conexión a la BD y definición de tablas
+
+│   ├── database.py          → conexión a la BD y tablas
+
 │   ├── schemas.py           → validación de datos con Pydantic
+
 │   ├── auth.py              → encriptación y tokens JWT
+
 │   ├── rutas_auth.py        → endpoints de login y registro
+
 │   └── rutas_votaciones.py  → endpoints de votaciones y predicción
+
 ├── FRONTEND/
+
 │   └── app.py               → interfaz web con Streamlit
+
 ├── MODELO/
+
 │   ├── entrenar_modelo.py   → script de entrenamiento
-│   └── modelo_votacion.pkl  → modelo entrenado (generado al correr el script)
+
+│   └── modelo_votacion.pkl  → modelo entrenado
+
 ├── DATOS/
+
 │   └── votaciones_limpio.csv
+
 ├── ANALISIS/
+
 │   └── exploracion.ipynb
+
 ├── requirements.txt
+
 └── .gitignore
-```
 
 ---
 
@@ -45,8 +60,8 @@ DiputadosAR/
 
 ### 1. Clonar el repositorio
 ```bash
-git clone https://github.com/tu-usuario/DiputadosAR.git
-cd DiputadosAR
+git clone https://github.com/malecabanela-UBA/DiputadosAR-MVP.git
+cd DiputadosAR-MVP
 ```
 
 ### 2. Instalar dependencias
@@ -83,13 +98,6 @@ streamlit run app.py
 Crear una cuenta desde la pantalla de login, o usar:
 - **Usuario:** `admin`
 - **Contraseña:** `admin123`
-
----
-
-## 🌐 Deploy
-
-- **Backend:** [https://diputadosar.onrender.com](https://diputadosar.onrender.com) *(próximamente)*
-- **Frontend:** [https://diputadosar.streamlit.app](https://diputadosar.streamlit.app) *(próximamente)*
 
 ---
 
