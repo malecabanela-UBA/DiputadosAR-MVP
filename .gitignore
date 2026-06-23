@@ -1,66 +1,20 @@
-# =========================
+# Variables de entorno (¡nunca subir al repo!)
+.env
 
-# PYTHON
+# Base de datos local
+*.db
 
-# =========================
-
-**pycache**/
+# Python
+__pycache__/
 *.pyc
 *.pyo
-*.pyd
-
-# =========================
-
-# ENTORNOS VIRTUALES
-
-# =========================
-
-venv/
 .venv/
+venv/
 env/
 
-# =========================
-
-# VS CODE
-
-# =========================
-
-.vscode/
-
-# =========================
-
-# JUPYTER
-
-# =========================
-
+# Jupyter
 .ipynb_checkpoints/
 
-# =========================
-
-# DATASETS INTERMEDIOS
-
-# =========================
-
-raw_data/votos_expandidos.csv
-raw_data/votos_limpios.csv
-raw_data/votos_macrocoaliciones.csv
-raw_data/dataset_features_base.csv
-
-# =========================
-
-# ARCHIVOS TEMPORALES
-
-# =========================
-
-*.log
-*.tmp
-
-# =========================
-
-# SISTEMA OPERATIVO
-
-# =========================
-
+# Sistema operativo
 .DS_Store
 Thumbs.db
-desktop.ini
