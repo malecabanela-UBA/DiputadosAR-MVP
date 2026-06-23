@@ -1,113 +1,57 @@
-# 🏛️ Predictor de Votaciones Legislativas - Cámara de Diputados AR
+🏛️ DiputadosAR - Modelo Predictivo de Votación Legislativa
 
-**Seminario de Ciencia de Datos para Politólogos — UBA**
+👥 Información General
 
-Aplicación web que permite visualizar y predecir el comportamiento de voto de los diputados argentinos usando Machine Learning.
+Integrantes: Gianfranco Crichigno, Malena Cabanela, Alma Daubenfeld
 
----
+Proyecto: DiputadosAR
 
-## 🎯 ¿Qué hace?
 
-- **Login seguro** con usuario y contraseña encriptada
-- **Dashboard interactivo** con gráficos de votaciones por bloque y provincia
-- **Predicción de voto** usando un modelo Random Forest
-- **API REST** construida con FastAPI
+🎯 Planteo del Proyecto
 
----
+El objetivo del proyecto es desarrollar una herramienta predictiva que permita anticipar el comportamiento de voto de los diputados de la Nación Argentina. A través de un modelo de Machine Learning entrenado con datos históricos reales, el sistema identifica patrones en la disciplina partidaria, la trayectoria legislativa y los alineamientos políticos para predecir si un diputado votará Afirmativo, Negativo o se Abstendrá ante un proyecto de ley.
 
-## 🗂️ Estructura del proyecto
+
+⚠️ Planteo del Problema
+
+Anticipar las intenciones de voto legislativo es difícil cuando la información disponible es ambivalente o proviene de fuentes de opinión pública poco estructuradas. Sin embargo, existen patrones observables y medibles: el bloque partidario al que pertenece un legislador, su comportamiento histórico de voto, las dinámicas de alineamiento entre bloques y la trayectoria individual del diputado. Este proyecto busca capturar y modelar esos patrones para hacer el comportamiento legislativo más transparente y anticipable.
+
+
+📋 Requerimientos del Proyecto
+
+RequerimientoDescripciónNombre del ProyectoDiputadosAR - Modelo Predictivo de Votación LegislativaEl ProblemaDificultad de anticipar intenciones de voto a partir de patrones observables: bloque partidario, comportamiento histórico, alineamientos y trayectoria del legisladorEl UsuarioInvestigadores y académicos, estudiantes de Ciencia Política, periodistas, consultoras políticas y público general interesadoOrigen de los DatosDatabase de "Cómo Votó" y webscraping del sitio oficial de la Honorable Cámara de Diputados de la NaciónFuncionalidadPredicción del voto de un diputado (Afirmativo / Negativo / Abstención) según su bloque, provincia y tipo de proyecto
+
+
+🗂️ Estructura del Proyecto
+
 DiputadosAR/
-
 ├── BACKEND/
-
 │   ├── main.py              → punto de entrada de la API
-
-│   ├── database.py          → conexión a la BD y tablas
-
+│   ├── database.py          → conexión a la base de datos y tablas
 │   ├── schemas.py           → validación de datos con Pydantic
-
 │   ├── auth.py              → encriptación y tokens JWT
-
 │   ├── rutas_auth.py        → endpoints de login y registro
-
 │   └── rutas_votaciones.py  → endpoints de votaciones y predicción
-
 ├── FRONTEND/
-
 │   └── app.py               → interfaz web con Streamlit
-
 ├── MODELO/
-
-│   ├── entrenar_modelo.py   → script de entrenamiento
-
-│   └── modelo_votacion.pkl  → modelo entrenado
-
+│   ├── entrenar_modelo.py   → script de entrenamiento del modelo
+│   └── modelo_votacion.pkl  → modelo entrenado (Random Forest)
 ├── DATOS/
-
 │   └── votaciones_limpio.csv
-
 ├── ANALISIS/
-
 │   └── exploracion.ipynb
-
 ├── requirements.txt
-
 └── .gitignore
 
----
 
-## 🚀 Cómo instalar y correr
+🛠️ Stack Tecnológico
 
-### 1. Clonar el repositorio
-```bash
-git clone https://github.com/malecabanela-UBA/DiputadosAR-MVP.git
-cd DiputadosAR-MVP
-```
+CapaHerramientasLenguajePythonManipulación de datospandas, numpyMachine Learningscikit-learn (Random Forest)VisualizaciónPlotly, seaborn, matplotlibBackend / APIFastAPI, uvicornFrontendStreamlitAutenticaciónJWT + bcryptBase de datosSQLite (local) / PostgreSQL con Supabase (producción)DeployRender + Streamlit Community CloudControl de versionesGit + GitHub
 
-### 2. Instalar dependencias
-```bash
-pip install -r requirements.txt
-```
 
-### 3. Entrenar el modelo
-```bash
-cd MODELO
-python entrenar_modelo.py
-```
+🔑 Credenciales de Prueba
 
-### 4. Correr el backend (en una terminal)
-```bash
-cd BACKEND
-uvicorn main:app --reload
-```
 
-### 5. Correr el frontend (en otra terminal)
-```bash
-cd FRONTEND
-streamlit run app.py
-```
-
-### 6. Abrir en el navegador
-- **Frontend:** http://localhost:8501
-- **Documentación de la API:** http://localhost:8000/docs
-
----
-
-## 🔑 Credenciales de prueba
-
-Crear una cuenta desde la pantalla de login, o usar:
-- **Usuario:** `admin`
-- **Contraseña:** `admin123`
-
----
-
-## 🛠️ Tecnologías utilizadas
-
-| Capa | Tecnología |
-|------|-----------|
-| Backend | FastAPI + SQLAlchemy |
-| Base de datos | SQLite (local) / PostgreSQL con Supabase (producción) |
-| Autenticación | JWT + bcrypt |
-| Machine Learning | Scikit-Learn (Random Forest) |
-| Frontend | Streamlit + Plotly |
-| Deploy | Render + Streamlit Community Cloud |
+Usuario: admin
+Contraseña: admin123
