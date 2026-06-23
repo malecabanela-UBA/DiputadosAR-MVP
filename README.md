@@ -1,7 +1,3 @@
-Tenés razón, me copié mal. Acá va el README final igual al de tus compañeras:
-
----
-
 # 🏛️ DiputadosAR - Modelo Predictivo de Votación Legislativa
 
 ## 👥 Información General
